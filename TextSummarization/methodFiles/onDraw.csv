@@ -1,0 +1,24 @@
+﻿sentences
+Move invalidate   to onTouchEvent   from onDraw   in the Slider.java.
+Why is there the function invalidate   in the onDraw  .That would result in refreshing the component ceaselessly.
+Why don t place the invalidate   in the onTouchEvent  .
+remove unnecessary condition in onDraw  .
+"this condition is if  bitmap == null  and also if bitmap .= null , so the later is kind of unnecessary"
+Refactor suggestion.
+"You could extend ColorCircle with a new field  private float size, and store the size of each circle."
+You have this value available in both Renderer classes.
+This way it is easier to draw a border around the currently selected circle.
+I find it nicer with a single black circle with 3.0f stroke with around the selected one.
+Also this way you can skip some calculation logic in onDraw   function of ColorPickerView.
+"I use it like this  float size = Math.max minimumSelectedCircleSize, currentColorCircle.getSize   , where minimumSelectedCircleSize is defined at init."
+"Good luck, very nice library by the way."
+MyTimer.java.
+"You shouldn t initialize code in onDraw even if there is a flag, just initialize it in the constructor."
+Try not to allocate too many objects in onDraw
+Polygon hole can not show on VectorLayer.
+when i add  PolygonDrawable   to the VectorLayer Polygon holes cannot be drawn，Is there a way to solve this problem.，Is my style wrong？
+Replace Titlebar with NavigationDrawer.
+It wastes horizontal space but it s necessary to use modern Android s standard menu implementation.
+"Better alternative would be to use a NavigationDrawer, so I ll look into this."
+RoundedImage.
+"Make sure rectangle is only defined once in constructor for performance, not in onDraw cause this can happen x-times."

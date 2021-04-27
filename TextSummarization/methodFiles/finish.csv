@@ -1,0 +1,275 @@
+﻿sentences
+Android O background service limitations.
+How do the new background service limitations in the newest Android O Developer Preview affect RoboSpice.
+"Even on earlier releases, when the Activity goes into background and a request hasn t finished yet, a blank notification is being shown."
+Dismiss and pass the touch event to underlaying view on touch down.
+Is it possible to dismiss MaterialIntroView and pass the touch event to underlaying view on touch down.
+The reason I need this is that I am using MaterialIntroView to explain that it is possible to swipe a view holder in a view pager.
+When the user finished reading the description their first action is often to try to swipe the view.
+"But since MaterialIntroView is still visible it will consume the first touch event, I want to pass this touch swipe event to my view holder so it can be swiped and MaterialIntroView dismissed at the same time."
+compile issue .
+"Good day team, for some reason, after i decompile the file and i try to compile it does not seems to work, normally i go to build and after it finished it does not give me the option to export can you please help thank you"
+Is it possible to prevent activity to finish while scroll up in recyclerview.. Hello I am using swipe back activity in one of my project activity.
+My activity layout contains recyclerview and other components as well.
+So the problem is when I scroll up my recyclerview items then activity get finished.
+So is there any way to prevent activity to finish while recyclerview is visible .
+Inconsistent Audio Playback on Tablets.
+When playing audio on tablets the audio playback jumps between ayahs.
+To reproduce  Go to Surah Al-Fatihah on a tablet.
+Activate dual and quran mode.
+Start audio playback.
+Wait for recitation of Fatihah to finish
+Attribute Error  BamScanner has no attribute  indel_table .
+"My name is Maheetha, and I m a student at a lab at Stanford trying to use WASP for allele-specific expression purposes."
+I have a couple of bugs that I was hoping you might have the answer for.
+I have everything set up as according to the README file and have all of the SNPs separated by chromosome in a separate directory.
+"When I run find_intersecting_snps.py, it finishes chr1, chr10, and chr11 sucessfully."
+"During chr11, it doesn t say that it  skips any SNPs , but it skipped SNPs for chr1 and chr10."
+"However, I think the bigger issues is that it finishes after chr11 and doesn t do chr12 or any other chromosome for that matter."
+"When I try to do chr8 by itself or start from chr12  so I remove chr1, chr10, and chr11 from the snp directory  it gives me this error."
+Possible Features.
+Is it possible to have the menu  slide on top  of the main layout instead of  pushing  the main layout out of the way.
+My implementation would be sliding a layout on top of the previous layout so that the previous layout is still visible on the edge.
+Also is there a way to listen for when the open or close animation if finished.
+"Here is a layout example  http //pastebin.com/cKcFDLij Cheers, your projects are a life saver."
+ormlite 5.1  android.database.sqlite.SQLiteDatabaseLockedException  database is locked  code 5   .
+while compiling  PRAGMA journal_mode.
+I have a set of espresso android tests where at the beginning of each test I create a new OrmLiteSqliteOpenHelper.
+After the test is finished I close the helper and drop the database using android.content.Context#deleteDatabase.
+After upgrading to 5.1 I started to see the following error when running the whole suite  individual tests pass fine
+"How to perform a repeat of the animation.. Should I really re-create the GifDecoder, making it re-load the GIF file after it finishes ."
+It probably will take a lot more memory this way.
+What s the best way to overcome it.
+Rewind/Forward 30 seconds out of range bounds.
+"Description When clicking rewind 30 seconds button if current time is lower than 30 secs, the current time at left of the seek bar displays a negative value for a moment."
+"When clicking forward 30 seconds button if current time is close to finish time lower than 30 secs, the current time at left of the seek bar displays a value higher than content duration for a moment."
+Expected behaviour Do not pass content duration boundaries in displayed time when clicking rewind/forward buttons.
+在 Activity finish   里添加一个延时退出就可以了。
+Do not unlock again if still in the app.
+When configuring a schedule the app should not ask for ask for your passcode again when youre finished
+wrong victory statistics.
+"I might be wrong but it looks like that win and lost counting is based upon finished games, while it should be based on the  automatic finish   translated from french  button."
+Because if you don t hit the button and close the game the game is mark as lost.
+[Feature] Add the game Dimaryp.
+"RULESWith a standard 52-card deck  no jokers , start by dealing a row of 7 cards face up laid side by side."
+"The remaining cards you try to play face-up on to the row of 7, first a row of 6, then 5, etc."
+You can start working on your shorter rows  as they connect  before you finish the longer ones.
+It ends up looking like a pyramid unless you build down ... then it s an upside-down pyramid.
+"So after you deal the first 7, you turn over the next card from the deck and try to play it somewhere on the first row."
+You lay it down so that it s overlapping on 2 of the 7.
+The card you play and the 2 cards you play it on make a set of 3 cards.
+"The set of 3 cards must be all the same suit, the same number, or a run of consecutive numbers  like 7-8-9  in any order."
+"Examples  8-7-6, Q-10-J, 3-4-2."
+Aces are wild and they can have multiple identities in relation to the cards around them.
+Deuces and kings are not considered to be consecutive.
+There is one other set of 3 that is allowed.
+"It is acceptable if the card you play is the same suit as one card, and the same number as the other."
+"For example, if you have a 3 of spades next to a king of hearts, you can lay a 3 of hearts on them  or a king of spades ."
+"If you can t find a place to play a card, you put it in a face-up discard pile."
+The top card on the discard pile can be used if it later becomes playable.
+You can choose to not play a card that is playable.
+Sometimes this is advisable when considering future prospects in the next row.
+You keep playing cards until you build an upside-down  or right-side-up  pyramid with a final row of 1.
+"If you can do that before running out of cards, you win."
+Count your remaining cards to determine your score.
+Can you offer an example for how to use initializeValues  ..
+"IMPORTANT  whenever you populate your listview, when you r finished populating, don t forget to call listview.initializeValues  .What does populate listview or finish populaing listview mean."
+It is really confused.
+Can you offer an example.Thanks a lot.
+[Feature Request] Add alarm volume setting.
+increasing volume.
+"Feature Requests alarm volume setting for each place, where sound can be chosen,option to use increasing volume,option for time, how long should reach the maximum volume  should default to 30 second  .BUG Currently the volume setting is set to maximum.There is also a bug the maximum volume is kept, when alarm is finished."
+The volume level used previously should be restored after alarm is finished.
+play all files in a folder.
+"Currently only 1 file plays, would be nice if when playing a file in a folder  album  when it finishes, move on to play the next one.I m guessing this will require hooking into a callback that fires when tracks finish playing - not sure if there is anything like that in the src at the moment."
+Fatal error issue.
+Attempted to finish an input event but the input event receiver has already been disposed.How can i solve it.
+Feature Request  Auto-Update Program based on exercises completed.
+"I am using the app for my strength workouts, but I can see this applying for people who track their cardio and want to constantly improve themselves.The way I work out and my current problem  I start my programs out with lighter weights, then as I work out and push myself in the gym, I constantly try to increase."
+"If I lift more weights one week, I would like that next time I do a specific program I start off at the same point.In other words, the feature is to automatically increase the weight used for an exercise based off what was completed previously.Example Program  Monday  has an exercise  Bench Press  and it is set for 6 reps at a weight of 135 lbs."
+"As I complete the program, I end up pushing more  lets say 6 reps at 155 lbs  and this is logged in the app."
+"When the user finishes the workout and clicks on  Finish Program , the program automatically gets adjusted with the max weight completed."
+"So next time the user does  Monday , the program will ask for 155 lbs instead of the original 135 lbs.I would have that added as a new setting which the user can turn on or off as they wish.Some things that I though of and can be open for discussion Should the weight only increase if the user completed the requested number of reps. From the example above, if the user only did 5 reps of 155, should it still increase the weight of the program or keep it as-is."
+I think I would keep the weight until reps are achieved Should we simply have a new popup/dialog that asks the users which ones to update.
+"That way even if the user did lift more, he can choose not to update his program, or maybe he will have checkboxes and be able to select which ones to update and which ones to leave.I am new to the code but I can start looking into this if no one opposes."
+Not refresh SDCard..
+If i use mp3 after download finished it not referesh in sd card
+fbw  pollis for scan results even when results are being retrieved.
+"When selecting  scann , first boot wizard starts polling for completion to the lime-fbw.search_networks ubus endpoint.When the scanning ends the results are retrieved by the same endpoint."
+But something strange happens.
+The code continue polling beteen 3 to 10 more requests to the same endopoint  and does not display the results until it finishes For example here  the responses with 74 Bytes are empty but the responses of 454 Bytes have the results
+Timeout when shape_finished not received.
+The message_echoer node does not currently respond appropriately to the case when the tablet does not publish a message on the  shape_finished  topic.
+"As such, you have to manually publish with rostopic pub /shape_finished std_msgs/String  asdf  -1 to get the interaction to continue in this case."
+"[enhancement] Add missing bower.json.. Hey, maintainer s  of pyuan/cftoaster.We at VersionEye are working hard to keep up the quality of the bower s registry.We just finished our initial analysis of the quality of the Bower.io registry 7530 - registered packages, 224 of them doesnt exists anymore,We analysed 7306 existing packages and 1070 of them don t have bower.json on the master branch   that s where a Bower client pulls a data  .Sadly, your library pyuan/cftoaster is one of them.Can you spare 15 minutes to help us to make Bower better.Just add a new file bower.json and change attributes."
+Server Feature provide possibility to flag game as finished.
+Game should be able to flag a match Id as finished.
+development istSOS cliend android demo.
+I read about istSOS client and server documentation.
+so android demo is not finished.I would like to work on android istSOS cllent.
+Show news in App .
+Therefore HackerspaceBremen/open_space_notifier#8 has to be finished first.
+Add a congratulations screens after finishing payments on  Lending Circles .
+Add a congratulations screens after finishing payments on Lending Circles
+Conversational Dialog for Listening and Replying to Text Messages in Drive Mode.
+We need to enable a small conversational dialog for Listening and Replying to Text Messages.When a new SMS is received the App should say  New Message from .
+To listen to this message say Listen.
+and prompt for a Voice InputIf the user says  Listen|Please|Read|Yes|Go Ahead|Listen Now  etc.
+"then the App should Read the Message body, and on finishing ask  If you would like to Reply to this message say Reply If the user says Reply the App should prompt for a Voice Input and wait for the user to dictate the message.On completion, the App should repeat the message that the user has input and ask  Do you want to Send it or Change it."
+If the user says  Send it  send the messageIf the user says  Change it  go to step 3 above.At each step when the user gets a voice prompt and doesn t respond within 15 - 20 seconds the App should prompt the user  Could you please repeat what you just said .
+If the user doesn t respond or the App doesn t speak any voice input or the app doesn t understand what the user said it should abort with a voice message like  Sorry I m having trouble listening to what you are saying.
+Please try again in some time .NOTE  This feature should be activated in Drive Mode only.
+HTTP based FT fails if there s a pending chat session.
+What steps will reproduce the problem.1.
+start an HTTP based file transfer2.
+BEFORE upload is ready send a chat message to the very same B party3.
+BEFORE chat session triggered in 2 is ACKed the upload is finishedWhat is the expected output.
+What do you see instead.OriginatingHttpFileSharingSession.sendResultToContact   should queue the uploadof XML file description to B.
+Instead it tries to use an MSRP session by thecall of chatSession.sendDataChunks which is not yet in place.
+Consider Interstatial Ads.
+Consider adding an interstatial ad between finishing game or saving game.
+Espresso does not wait until SwipeRefreshLayout RefreshListener finished.
+What steps will reproduce the problem.git clone https //github.com/andnexus/android-testing1.
+Run emulator without gpu on and turn off animation2.
+"Replace line 41 inmaster/app/src/androidTest/java/com/andnexus/android/tests/MainActivityTest.java - onView withId R.id.action_refresh  .perform click   ,+ onView withId R.id.refresh  .perform swipeDown   ,What is the expected output."
+What do you see instead.Test should pass like it does with current committed code but it does not.What version of the product are you using.
+On what operating system.Variant build from master with BuildType debug.# Create and start emulatorandroid create avd --force --name test --target android-19 --abi armeabi-v7aemulator -avd test -no-skin -no-audio -no-window# Disable lock screen if device is readeadb shell input keyevent 82
+"Better Ruler / Straight Line tool.. As I am studying Physics, I need to draw diagrams and tables very often.Some things that would make it more comfortable woukd be optional Snapping to certain angles or paper linesdrawing of three point lines for creating specific angles.Display of the angle s current degree while drawing for every line you arecrossing.Display of the actual line s lenght while drawing.Pressing the pen button to finish the line, because if you have to lift the penup for that like now, the endpoint will almost always shift a little bit.Thank you for the great software."
+Some sound effects don t load.
+"First I want to thank you for in my opinion the best Doom port for Android.So everything works fine, except sound effects."
+The problem is PrBoom doesn tload all of sfx.
+"For example I don t hear rocket launch sfx, teleporting sfxetc, while the rest of sfx is ok. Game reload makes for example rocket launcheris ok, but another random sound effects don t work."
+Sometimes game doesn t loadbackground music in next map when I finish the previous.Is there any way to fix this issue.
+My device is Samsung Galaxy S2 with Rootboxbased on Android 4.2.2.
+On stock software from Samsung based on Android 4.1.2the problem also appears.
+"On Samsung Galaxy S3 sfx are bugged too.I look forward to hearing from you, greetings from Poland."
+Music will only play once then stop.
+What steps will reproduce the problem.1.not finishing the level before the music enda2.3.What device do you have.This happens on my Samsung sch-r720 and my kyocera eventWhat version of Android are you using.
+If it is a custom ROM please specifywhich one.Samsung is 2.3.6 and kyocera is 4.0.4Please provide any additional information below.
+Calculations of timings need to be reliable.
+We currently use floating point values to represent the timings read from SMILfiles.
+Comparing floating point values can be problematic as some values areimpossible to represent accurately e.g.
+0.1 seconds.
+"This means our currentcode might not be able to compare accurate values, which may lead tocomplications in the code  where we try to code around inaccuracies  and bugswhere despite our best efforts the calculations remain inaccurate, e.g."
+wherethe audio player may continue playing rather than finish at the correct offset.To improve the accuracy and simplify the code we can consider using BigDecimalrepresentationshttp //docs.oracle.com/javase/1.5.0/docs/api/java/math/BigDecimal.htmlI ve not used these before so I need to experiment first.
+Calculations of timings need to be reliable.
+We currently use floating point values to represent the timings read from SMILfiles.
+Comparing floating point values can be problematic as some values areimpossible to represent accurately e.g.
+0.1 seconds.
+"This means our currentcode might not be able to compare accurate values, which may lead tocomplications in the code  where we try to code around inaccuracies  and bugswhere despite our best efforts the calculations remain inaccurate, e.g."
+wherethe audio player may continue playing rather than finish at the correct offset.To improve the accuracy and simplify the code we can consider using BigDecimalrepresentationshttp //docs.oracle.com/javase/1.5.0/docs/api/java/math/BigDecimal.htmlI ve not used these before so I need to experiment first.
+Espresso does not wait until SwipeRefreshLayout RefreshListener finished.
+What steps will reproduce the problem.git clone https //github.com/andnexus/android-testing1.
+Run emulator without gpu on and turn off animation2.
+"Replace line 41 inmaster/app/src/androidTest/java/com/andnexus/android/tests/MainActivityTest.java - onView withId R.id.action_refresh  .perform click   ,+ onView withId R.id.refresh  .perform swipeDown   ,What is the expected output."
+What do you see instead.Test should pass like it does with current committed code but it does not.What version of the product are you using.
+On what operating system.Variant build from master with BuildType debug.# Create and start emulatorandroid create avd --force --name test --target android-19 --abi armeabi-v7aemulator -avd test -no-skin -no-audio -no-window# Disable lock screen if device is readeadb shell input keyevent 82
+Calculations of timings need to be reliable.
+We currently use floating point values to represent the timings read from SMILfiles.
+Comparing floating point values can be problematic as some values areimpossible to represent accurately e.g.
+0.1 seconds.
+"This means our currentcode might not be able to compare accurate values, which may lead tocomplications in the code  where we try to code around inaccuracies  and bugswhere despite our best efforts the calculations remain inaccurate, e.g."
+wherethe audio player may continue playing rather than finish at the correct offset.To improve the accuracy and simplify the code we can consider using BigDecimalrepresentationshttp //docs.oracle.com/javase/1.5.0/docs/api/java/math/BigDecimal.htmlI ve not used these before so I need to experiment first.
+Calculations of timings need to be reliable.
+We currently use floating point values to represent the timings read from SMILfiles.
+Comparing floating point values can be problematic as some values areimpossible to represent accurately e.g.
+0.1 seconds.
+"This means our currentcode might not be able to compare accurate values, which may lead tocomplications in the code  where we try to code around inaccuracies  and bugswhere despite our best efforts the calculations remain inaccurate, e.g."
+wherethe audio player may continue playing rather than finish at the correct offset.To improve the accuracy and simplify the code we can consider using BigDecimalrepresentationshttp //docs.oracle.com/javase/1.5.0/docs/api/java/math/BigDecimal.htmlI ve not used these before so I need to experiment first.
+Android 1.6 use BluetoothSamples but not running.
+What steps will reproduce the problem.1.2.3.What is the expected output.
+"What do you see instead.Dear gerdavax, I have try the BluetoothLibrarySamples in trunk.I have finished all code and xml, have no error and I can install in my HTCMagic Android 1.6, I can run the program, and see all the button  BluetoothService, Local Bluetooth Device,.... , but When I click any button, it willerror and show this message  Sorry."
+The application Android BluetoothSamples process it.gerdavax.android.bluetooth.sample has stopped unexpectedly.Please try again.What version of the product are you using.
+"On what operating system.Eclipse IDE for Java DevelopersBuild id  20100218-1602 c  Copyright Eclipse contributors and others 2000, 2009.Platform  Android 1.6 HTC Magic 1.6 jar  AndroidBluetoothAPI_0.2.jarPlease provide any additional information below.All code I have already check again by again, but can t understand what swrong, and my English is broke, sorry about that."
+Port from bash to cross-platform Maven.
+"Here s the start of a port from bash to pure Maven.I didn t finish it, because I found this plugin and it solved my issue"
+User can go on study a course after he has at the end of the course.
+User can go on study a course after he has at the end of the course.
+After click the  Go on study this course  user can open the Study activity and shows the latest word of the course.
+Click the next button will return from the Study activity and a new study history will be created.Recommend resolution  Prevent user from opening Study activity and notify user that he/she has finished the course.
+Espresso does not wait until SwipeRefreshLayout RefreshListener finished.
+What steps will reproduce the problem.git clone https //github.com/andnexus/android-testing1.
+Run emulator without gpu on and turn off animation2.
+"Replace line 41 inmaster/app/src/androidTest/java/com/andnexus/android/tests/MainActivityTest.java - onView withId R.id.action_refresh  .perform click   ,+ onView withId R.id.refresh  .perform swipeDown   ,What is the expected output."
+What do you see instead.Test should pass like it does with current committed code but it does not.What version of the product are you using.
+On what operating system.Variant build from master with BuildType debug.# Create and start emulatorandroid create avd --force --name test --target android-19 --abi armeabi-v7aemulator -avd test -no-skin -no-audio -no-window# Disable lock screen if device is readeadb shell input keyevent 82
+"Just about to make a game launcher.. Hi, Sorry for starting a issue I have no other way to make contact."
+I have been wanting to make a game launcher for sometime and now that I have the new Razer phone and some time over Christmas I want to start it.
+I stumbled across your project and built it and you have done a fantastic job.
+Do you want to team up to finish it.
+or alternately would you be happy for me to use it as my starting block however crediting you.Kind Regards.
+Thanks！I have finished.
+version 1.0.
+Hi，my work have finished.
+The whole task doesn t finish.
+What steps will reproduce the problem.1.
+Send notice  as text  from  Catch 2.
+Move to some another folder to create some more activities in the task.3.
+Tap  Copy here What is the expected output.
+"What do you see instead.The whole application task should be finished, i.e."
+all  Send to SD card activities should be closed.
+But only the last activity  with the last folder is closed.It s repeated only with  Catch .
+"Sending from ASTRO, HTC albums, EasyShare texts too  doesn t cause the bug."
+Build fails for x86 and mips .
+What version of the product are you using.
+"On what operating system.Linux  Ubuntu 12.0.4 , 32bitandroid-ndk-r8bPlease provide any additional information below.If I use  APP_ABI  = armeabi-v7a instead of APP_ABI  = armeabi-v7a intoApplication.mk then ndk-build finish in normal way"
+"Better Ruler / Straight Line tool.. As I am studying Physics, I need to draw diagrams and tables very often.Some things that would make it more comfortable woukd be optional Snapping to certain angles or paper linesdrawing of three point lines for creating specific angles.Display of the angle s current degree while drawing for every line you arecrossing.Display of the actual line s lenght while drawing.Pressing the pen button to finish the line, because if you have to lift the penup for that like now, the endpoint will almost always shift a little bit.Thank you for the great software."
+Nexus 5/4.4 KitKat Truncated Playback.
+What steps will reproduce the problem.1.Play content with NPR app with less than 100% perfect cell network signalWhat is the expected output.
+"What do you see instead.Users expect the content to play from start to finish, despite buffer issues.Instead, the content playback often stops a few seconds before the end of thestory and advances to the next story."
+"This seems to happen more with marginalnetwork signal, though it could be coincidence.What version of the product are you using."
+"On what operating system.2.5.1 on Android 4.4/Nexus 5Please provide any additional information below.I m very familiar with buggy playback issues on the Nexus 4/Android 4.3,primarily skipping stories or stories starting at the time offset of theprevious story s finish  very annoying and often dismissed in this bug trackingsystem ."
+"THis is a novel problem, though the previous issue still exists."
+"Better Ruler / Straight Line tool.. As I am studying Physics, I need to draw diagrams and tables very often.Some things that would make it more comfortable woukd be optional Snapping to certain angles or paper linesdrawing of three point lines for creating specific angles.Display of the angle s current degree while drawing for every line you arecrossing.Display of the actual line s lenght while drawing.Pressing the pen button to finish the line, because if you have to lift the penup for that like now, the endpoint will almost always shift a little bit.Thank you for the great software."
+finish read.me.
+need finish read.me
+Pending so much things.
+I wish I could finish this app... any volunteer.
+Finish Takt-Timer activity..
+"I will be finishing the TaktTimerActivity by implementing a real timer in place of the current toy example, a pause button, as well as a menu button."
+Menu buttons disappeared.
+What is the expected output.
+What do you see instead.The menu button on the right screen border has vanished.
+I cannot change toanother game.
+When I finish a game the app closes and I have to re-open.I tried rebooting.
+"Then uninstalling, and after reinstall a different game isup with the same no menu.What version of the product are you using."
+"On what operating system.I just reinstalled onto Droid Maxx, is version  8Please provide any additional information below.AI like your version of free cell best."
+Menu buttons disappeared.
+What is the expected output.
+What do you see instead.The menu button on the right screen border has vanished.
+I cannot change toanother game.
+When I finish a game the app closes and I have to re-open.I tried rebooting.
+"Then uninstalling, and after reinstall a different game isup with the same no menu.What version of the product are you using."
+"On what operating system.I just reinstalled onto Droid Maxx, is version  8Please provide any additional information below.AI like your version of free cell best."
+finish README.
+I m just getting started with Github
+Configure Zappr.
+Pull Request guidelines.Block a PR until it has the required set of labels  e.g.
+reviewed .Block a PR as long as it has unfinished tasks
+Economy is displayed as 0.00 km/L.
+What steps will reproduce the problem.1.
+Entered all the fillup data and goto History Tab2.
+Click on one of the Fillup history3.
+Stats section --  Economy is shown as 0.0 km/LExpected behavior  should have displayed the mileage/economy by taking previousentry as start and current entry as finish / volume.
+[ToDo] The learning core needs to be established..
+"According to issue #13, the learning core should be established."
+"At the beginning, the learning core was based on BP Neural Network."
+The established core should be  after finished  evaluated on the relyability and the responsibility.
+"If it is not relyable enough, new neural networks may be chosen."
+Add game management.
+We want to have support for multiple concurrent multiplayer games.There will need to be a  game  table for storing the open and current games.Users will be able to create games in a  open games  view.These are the fields for a game number of players.
+"When the requisite number of players is reached, the game automatically starts.the region where the game will take place."
+"Initially this may be hard-coded, but we should eventually allow the creator to specify the geographic region by dragging out a rectangle.The ids of the players in the game.The duration of the game in hours."
+"This will be a number between 1 and 10,000.Timestamp for when the game starts and stops."
+It may stop before the limit if players resign.The creator of the game.Some other notes A player can only belong to one active game at a time.
+To join a different game they must first withdraw/resign from others.A player can only create one game at a time.
+"To create another, they must first delete any earlier game that was create, or wait for it to finish.A game cannot be destroyed if there are players who have joined it  even if it has not started ."
+The UI is currently in the works.
+With weather integration about finished the next step is to work on the user interface.
+"Import never ends - Always indeterminate.. On clicking import button, as expected the cancel button appears."
+Also indeterminate progress bar is shown in the actionbar.
+"But it never ends, even when the import has finished, as can be seen from the divecomputer display."
+"There is no notification to the user that the import has finished.Also, cancel button is never disabled again."
+Nor does pressing it does anything.
+My refactoring branch is still not worthy for the Plovdiv s fair.
+"My refactoring branch s project is functional, but still needs some fixings tobe finished."

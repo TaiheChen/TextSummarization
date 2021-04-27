@@ -1,0 +1,15 @@
+﻿sentences
+FLAG_ACTIVITY_NEW_TASK 能不能去掉.. 如题，startActivityForResult 后 会造成onActivity无法响应
+Return requestCode.
+"First of all, thanks for making this great lib, it is a cool lib to work with images."
+I  ve a question for you.
+"I am using the single pick with these lines  Intent i = new Intent Action.ACTION_PICK , startActivityForResult i, 100 , But in the activity result method, the request code has changed and I can t find where is changing."
+implicit intent 打开Activity 注意点.
+"一般都是设置  activity   action android name= com.example.demo.XXXX   /   /activity  其它Application中的Activity 调用 startActivity  Intent intent = new Intent  com.example.demo.XXXX  , startActivity intent , 这个时候直接启动会失败，往往我们忘记在activity intent-filter中添加   activity   action android name= com.example.demo.XXXX   /   category android name= android.intent.category.LAUNCHER  /   /activity"
+Can t convert the video .
+Thank u for this module but unfortunately i can t convert the file plz check the code
+Support Multiple user accounts.
+Let users sign into multiple accounts at the same time.
+To achieve this we need to do the following things  Update the database schemas Period and Subject  to store the data corresponding to the user ids.
+"Rewrite the stub sync Authenticator and StubProvider to actually go out and authenticate the user and store their credentials Make the Login Activity as the Authentication activity  implicit intents  and decouple it from the MainActivity  start it as startActivityForResult    Make all api calls using the currently selected user s credentials  from the preferences, database or provider."
+Add a Navigation drawer header to switch between users on the fly conforming to the material design guidelines  I think it s included in the design library...

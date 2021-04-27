@@ -1,0 +1,178 @@
+﻿sentences
+Change swipe in and swipe out messages.
+Is there a way that I can change the swipe in and swipe out messages along the way.
+I instantiated a swipeview builder in the onCreate function of my activity but I want to change the messages after the first swipe.
+"I tried placing this in an itemRemovedListener  which works, that s now the problem"
+关于引用该项目遇到的一些问题.以及解决办法.
+1.设置左滑之后，下滑禁止不掉这个问题是因为你的Activity即继承了SwipeBackActivity，Activity的布局中又加上了SwipeBackLayout。解决办法是要么继承SwipeBackActivity，然后在onCreate直接setDragEdge  设置；要么再布局文件中加上SwipeBackLayout，然后在Activty里调用SwipeBackLayout的setDragEdge  方法；两者只能选一个。2.Activity中有webview或者ListView、Recyclerview等可以上下拖动的控件时，侧滑很容易被触发。这个问题是滑动冲突照成的，位于底部的SwipeBackLayout拦截了子View的触摸事件。所以我们要做的是继承SwipeBackLayout重写它的onInterceptTouchEvent  方法，当手指在Y轴的移动速度大于X轴的移动速度时不拦截这个触摸事件，代码如下
+Notification does not shows.
+"I m trying to show a notification, but it only works in onCreate, then it does not appear..."
+Correct way to load dynamic content in wizard.
+In the sample code the AbstractWizardModel is being statically instantiated when MainActivity is created.
+"Once this is done, the onNewRootPageList   callback is immediately triggered in the wizard model and I couldn t find a way to load the PageList with some dynamic contents."
+The workaround I found for this is to make AbstractWizardModel class a inner class in MainActivity and have my dynamic content a global variable so I could access it from AbstractWizardModel.
+This generates a side effect since I m no longer instantiating AbstractWizardModel class when the MainActivity is create.
+"I m instantiating it o onCreate   callback, so it is being called some time later in comparison with original code."
+Is there an alternative way to load content in the form  PageList  dynamically.
+NOClassDefFoundError错误.
+在项目中引进这个插件后，在activity的onCreate中进行hook
+FileProvider Error.
+"I implemented this workaround to fix issue when you target api 24  = thanks to https //stackoverflow.com/users/4963858/hqzxzwb https //stackoverflow.com/a/40674771 StrictMode.VmPolicy.Builder builder = new StrictMode.VmPolicy.Builder  , StrictMode.setVmPolicy builder.build   , in Application.onCreate  ."
+In this way the VM ignores the file URI exposure.
+CastStateListener to be used from Fragment.
+I changed by initial implementation to have CastStateListener in application class.
+In Fragments I do get a call back in my cast listener but only second time onResume is called.
+My work flow state is as follows   CastContext and CastStateListener are declared in onCreate.
+in onResume I am adding CastListener and in onPause I am removing it.
+"When my fragment gets initialised, it goes to onResume."
+First time I do not get a callback to my CastStateListener.
+"But when I pause my fragment and resumes it again, the CastStateListener is called."
+"My implementation is such that I only want to show cast button on my fragment, so I think it makes sense to call CastStateListener in fragment itself."
+Any thoughts.
+android hook Handler 的dispatchMessage方法的时候没有执行originalMethod.
+hi，你好。最近在用你的zhooklib的时候遇到一个问题，我的项目在Application onCreate的时候开始hook 系统Handler的dispatchMessage方法，普通的message都可以hook成功，但是在执行一个wifiManager的serviceHandler的dispatchmessage的时候，虽然执行了beforeHookedMethod，但是之后并没有执行原来的dispatchmessage，导致主线程一直在wait产生ANR。简单debug了一下，发现beforeHookMethod并没有抛出异常，不同的是这个handler是执行的远程服务的回调消息，不知道会不会跟这个有关，因为看不到so的代码所以也不好猜测只好来询问一下。谢谢！
+Fragment Support.
+urrently only supports View based architectures and old school dialogs.
+Would be good to extend support to Fragments and FragmentDialogs.
+Due to the SRP #14 refactors UITypeHandlers can now be registered for differnt UI types  i.e.
+"Views, Dialogs, Fragments etc , this leaves the challenges around... 1.Working out where in the Fragments lifecycle is safe to start using the Presenter."
+2.Working out where in the DialogFragments lifecycle is safe to start using the Presenter.
+This has an extra constraint due to where onCreateDialog   is called 3.An example of how to align the foregound view for an Activity that used both a UIViewTypeHandler and a UIFragmentTypeHandler Ideally Fragments onCreateView would have access to the Presenter so any views can be initialised with frame based data.
+This needs to be true for a  newly placed fragments b  fragments that have been recreated after a config-change Need to keep in in mind the horror that is http //staticfree.info/~steve/complete_android_fragment_lifecycle.png.
+"Ideally would not use fragments at all but sometimes one needs to  say a 3rd party lib that supplied part of its SDK pre-bundled as a fragment  On Fragment recreation - cant really reliably push the Presenter to the Fragment before onCreateView is called, as this is called as a result of Activity.setContentView, inside of which is also the fragment recreation step."
+http //grepcode.com/file_/repository.grepcode.com/java/ext/com.google.android/android/5.1.1_r1/com/android/internal/policy/impl/PhoneWindow.java/.v=source  delegates to https //android.googlesource.com/platform/frameworks/base/+/refs/heads/master/core/java/android/transition/Scene.java delegates to https //android.googlesource.com/platform/frameworks/base/+/refs/heads/master/core/java/android/view/LayoutInflater.java May resort to Fragments needing to operate on a Pull fashion instead of Push  Views have their presenters pushed to them on creation .
+inside Fragment.onCreateView and FragmentDialog.onCreateDialog the first call could grab the corresponding Presenter from the hosting Activitys PilotStack.
+"It would also need to cope with the event that the frame is no longer top of the pilot stack, in which case the fragment should dismiss itself asap."
+Beginning to think to not bother - an arbritrary fragment can be shown using the GenericUITypeHandler and handled manually... EDIT  maybe we dont have to worry about fragment recreation if the UIFragmentTypeManager is just using the FragmentTransaction.replace   method anyway.
+"If fragment state restoration is handled in the same was as Views may should still restore fragment test, Test."
+Just done some testing - if we use replace with the same fragment the state is not saved by default - if not using replace then the presenter is after onCreateView...
+Think will need to just pull the presenter  if not already set  and if its not the top of the stack then it will auto be switched out by the top of stack callback that will follow the root Activitys.setContentView call.
+Then all need to do is ensure what ever UITypeHandlers that are being used will clear each other / take priority.
+Was thinking a Fragment can pull from the top of the stack using its @Presenter annotation to declare what presenter its interested in.
+If the top of the stack is a different presenter/frame null will be passed.
+This can be ignored and the fragment would build no UI in this case - as its about to be switched out anyway  it no longer represents the top of the stack .
+This wont work at current as after process death we may have some fragments recreated but the PilotLifeCycleManager has its onCreateDelegate called after Activity.setContentView.
+"This is intentional as we need to pass the PilotSyncer in here, which can reference part of the UI  see UITypeViewDisplayer ."
+If going this route would need to ensure that the PilotStack was already accessible by the point setContentView is called.
+"This could be done by delegating two calls to PilotLifecycleDelegate inside Activity.onCreate, one before setContentView which just uses the savedStateBundle to restore the stack, and one after that passes the ui hooked up PilotSyncer"
+Cleartext HTTP traffic not permitted.
+"Issue is located in MainActivity, inside the onCreate   new Thread   method were the getJSON parseUrl , is called."
+I know I could simply add  android usesCleartextTraffic= true   to the manifest file but I m new to this and I m wondering if it won t have any security back clashes in the future...
+Save Instance State on DisciplineActivity destroy/stop/rotate.
+Prevent the loss of data when the app is reopened after being in the background for a while.
+Enable autorotation in discipline/recall Save the instance state in a bundle when onSaveInstanceState   is called.
+Restore in onCreate
+Performance enhancement.
+We are working on a project called DiagDroid  http //www.cudroid.com/PersisDroid/  for detecting potential performance issues.
+Our tool could find performance degradation caused by improper usage of asynchronous executions.
+We find that in some cases your app may suffer a long processing delay.
+Case 1  Related source code Class  LawListFragment function  onCreate Circumstance The law list update is often quite slow.
+"Problem You have remarked  And parallel update the list from network , but use execute function of sectionDB and updater."
+execute function will execute the two task in sequential instead of in parallel.
+Suggested modification use executeOnExecutor instead of execute function.
+Case 2  Related source code Class  HeadlineComposerAdapter Method  getHeadlinesRaw Circumstance The request to RestClient sometimes takes very long.
+Problem Improperly use third party library RestClient.
+"Using RestClient.get method, the operation is time-costly."
+"When the page switches, the previous law is not necessary to be downloaded and displayed."
+Therefore some network requests should be cancelled.
+Suggested modification Invoke cancel operation of RestClient when necessary.
+主线程耗时操作日志输出.
+在Application或Activity的onCreate方法中，执行以下代码
+ActivityFinisher should wait until all finishing Activities are completely destroyed before running next test.
+What steps will reproduce the problem.
+Have some sort of global RPC mechanism where your app can register listeners.
+"In your test setUp, have this RPC mechanism notify all registered listeners  no Activity should be launched yet ."
+Have an Activity that registers a listener during its onCreate   and unregisters it during its onDestroy   with this RPC mechanism.
+The listener can simply log to logcat when notified.
+Have several tests that simply launch the Activity.
+Run the entire Test class such that all the test methods are run within one  adb shell am instrument  execution.
+SEService  GetReaders has bad performance and can crash client Application  especially in Android Jelly Bean .
+I have a test that create 10 thread that each does new SEService and GetReaders and then so on and so forth all the way down to transmitting APDU in logical channel.
+"What i discovered is that on Android JellyBean device, PackageManager is easily craching during that process when one of the thread call GetReaders  becuase of out of memory situation0."
+"Upon further study, there s PackageManager is being killed and that trigger uncaught exception on Client level."
+"With some root cause analyze, 2 thing is discover."
+"1  GetReaders always call AddonTerminal.java getPackageNames always get a whole list of all installedPackages 2  then it does an expensive loop of comparison against 2 strings, that can be 100ms+ If AddonTerminal.getPackagesNames is not thread/process safe, then Getinstalledpackages in ObjectManager can also take extended period of time that s the case, the long operation can easily be pre-emptted and result in large amount of memory being allocated at the same time."
+This issue would need to be addressed because  1  because the getPackageManager and string comparison is extremely expensive in performance.
+"2  more importantly, the memory foot print that is needed."
+"AddonTerminal does not affect the build in Readers  UICC, eSE, uSD , is there any real life use case other than for testing purpose."
+"if not, should it be done on the Service.onCreate time and have that information cached."
+Only use passive updates when in background.
+I found that both Passive and Active updates were being done when the app was in the foreground.
+I had changed the accuracy to COARSE My solution was to disable the updates for the passive listener in onCreate   and only enable in onPause   when not exiting the app
+ActivityFinisher should wait until all finishing Activities are completely destroyed before running next test.
+What steps will reproduce the problem.
+Have some sort of global RPC mechanism where your app can register listeners.
+"In your test setUp, have this RPC mechanism notify all registered listeners  no Activity should be launched yet ."
+Have an Activity that registers a listener during its onCreate   and unregisters it during its onDestroy   with this RPC mechanism.
+The listener can simply log to logcat when notified.
+Have several tests that simply launch the Activity.
+Run the entire Test class such that all the test methods are run within one  adb shell am instrument  execution.
+Slow operations in UI thread.
+"Dear developers, I am studying android-wifi-tether using a static code checker."
+I found some potential slow operations in android-wifi-tether s UI thread.
+Android documentation says this  http //developer.android.com/training/articles/perf-anr.html  Any method that runs in the UI thread should do as little work as possible on that thread.
+"In particular, activities should do as little as possible in key life-cycle methods such as onCreate   and onResume  ."
+"Potentially long running operations such as network or database operations, or computationally expensive calculations such as resizing bitmaps should be done in a worker thread  e.g., via AsyncTask ."
+"I found the following event handlers performing file IO or remote data reading  com.googlecode.android.wifi.tether.AccessControlActivity s onClick   handler at line 80  file reading and deleting com.googlecode.android.wifi.tether.SetupActivity s onCreate   handler  file reading and input stream zipping com.googlecode.android.wifi.tether.LogActivity s onCreate   handler  file reading and data loading from an URL com.googlecode.android.wifi.tether.AccessControlActivity s onCreate    file reading Do you think these slow operations will affect android-wifi-tether s performance  e.g., making GUI not smooth enough ."
+"If yes, perhaps moving them to a separate thread can help make android-wifi-tether super smooth in user interaction."
+Looking forward to your reply and hope I can help improve android-wifi-tether.
+Only use passive updates when in background.
+I found that both Passive and Active updates were being done when the app was in the foreground.
+I had changed the accuracy to COARSE My solution was to disable the updates for the passive listener in onCreate   and only enable in onPause   when not exiting the app
+ActivityFinisher should wait until all finishing Activities are completely destroyed before running next test.
+What steps will reproduce the problem.
+Have some sort of global RPC mechanism where your app can register listeners.
+"In your test setUp, have this RPC mechanism notify all registered listeners  no Activity should be launched yet ."
+Have an Activity that registers a listener during its onCreate   and unregisters it during its onDestroy   with this RPC mechanism.
+The listener can simply log to logcat when notified.
+Have several tests that simply launch the Activity.
+Run the entire Test class such that all the test methods are run within one  adb shell am instrument  execution.
+MapsActivity.java line 27. in org.shingo.shingoeventsapp.ui.MapsActivity.onCreate Number of crashes  1 Impacted devices  1 There s a lot more information about this crash on crashlytics.com  https //fabric.io/shingo-it/android/apps/org.shingo.shingoeventsapp/issues/5798f45affcdc04250927bd4
+MapFragment.java line 105. in org.shingo.shingoeventsapp.ui.events.MapFragment$override.onCreateView Number of crashes  1 Impacted devices  1 There s a lot more information about this crash on crashlytics.com  https //fabric.io/shingo-it/android/apps/org.shingo.shingoeventsapp/issues/5797cdbeffcdc04250820c6c
+ContactsFragment.java line 57. in com.isl.operadora.Ui.ContactsFragment.onCreateView Number of crashes  1 Impacted devices  1 There s a lot more information about this crash on crashlytics.com  https //fabric.io/itamar-lourenos-projects/android/apps/com.isl.operadora/issues/559c6e23f505b5ccf062f42f
+MonitoringInstrumentation leaking activity instances through ExecutorService.
+"Library  com.android.support.test testing-support-lib Version  0.1 TL,DR  on Android   5.0, activity instances may be leaked for at most 60 seconds by MonitoringInstrumentation after an activity started with MonitoringInstrumentation#startActivitySync is destroyed."
+The fix is a one line change in MonitoringInstrumentation#onCreate  .
+"I found this through a heap dump, here s what s going on  * MonitoringInstrumentation#onCreate creates a thread pool executor using Executors.newCachedThreadPool  , * MonitoringInstrumentation.startActivitySync   posts a Future Activity ."
+That ends up creating a FutureTask that has its  outcome  field set to an activity.
+"In an ideal world, once the FutureTask is completed it gets garbage collected and will therefore release the reference it has to the activity through the  outcome  field ."
+"However, *prior to Android 5*, threads looping and blocking on queues may keep a reference to stack local variables until the queue unblock."
+"Here s what I mean  while true  { Foo foo = blockingQueue.next  , foo.doSomething  , } Say blockingQueue only contains one thing and then stays empty."
+The loop will execute once and then block on next  .
+"However, the first foo instance will never be garbage collected, because it s help as a stack local variable until the queue unblocks."
+It s a VM optimization that creates temporary memory leaks.
+"This impacts any thread + blocking mechanism  thread pool executors, HandlerThread, etc  on Android versions less than 5  can t repro on 5 ."
+This is the same bug as this  https //github.com/square/picasso/pull/932 Because MonitoringInstrumentation uses Executors.newCachedThreadPool   so that s a core pool of 0 and a keep alive of 60 seconds.
+This means any thread that becomes idle will stay around for 60 seconds before being garbage collected.
+"So if we call MonitoringInstrumentation.startActivitySync  , the thread cool creates a thread to handle the FutureTask that will create the activity."
+"Once that future task is done, the thread becomes idle."
+"However, prior to Android 5.0, it keeps a stack local reference to the future task, and therefore prevents the activity from being garbage collected  until that thread is reused for another future task, or GCed after 60 seconds ."
+The fix here is to configure the ThreadPoolExecutor so that threads are immediately killed when they become idle.
+"It s not great, but it should be ok for instrumentation tests."
+Only use passive updates when in background.
+I found that both Passive and Active updates were being done when the app was in the foreground.
+I had changed the accuracy to COARSE My solution was to disable the updates for the passive listener in onCreate   and only enable in onPause   when not exiting the app
+Only use passive updates when in background.
+I found that both Passive and Active updates were being done when the app was in the foreground.
+I had changed the accuracy to COARSE My solution was to disable the updates for the passive listener in onCreate   and only enable in onPause   when not exiting the app .
+pressing back from within a new solver exits app.
+should go to main menu.
+"when inside a puzzle pushing the back button should not exit app, but go to main view."
+This is because main is not an activity.
+Make main an activity and start it in onCreate instead of settign layout.
+Project Feedback..
+Consider refactoring code all over the app into smaller methods which do one thing specifically.
+"In onCreate of MovieActivity, you have done UI initialization, setting up listeners and calling fetch method all in one place."
+A cleaner way would be to move UI init to its own method and setting up listener to its own.
+Similarly the adapter needs refactoring.
+AndroidGame onCreate does not calculate scale factors correctly.
+AndroidGame onCreate does not calculate scale factors correctly
+Week 2 Project  News Reader Powered by the New York Times.
+Is one style preferred over the other in Android.
+I find the flat list of methods easier to read.
+Can we bind elements in onCreateOptionsMenu.
+Butterknife crashed for me here.I understand why it crashed and I don t think there s a way to make it word but wanted to ask.
+It was a little frustrating that in order to use the Parceler library I had to make my model s member variables public.
+Using Glide I found I still needed to use a DynamicHeighImageView element to get the resizing to work right.
+One of the advantages of Glide is how it handles resizing.
+Should I have been able to optimize away my use of DynamicHeighImageView with Glide.

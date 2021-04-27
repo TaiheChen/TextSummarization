@@ -1,0 +1,50 @@
+﻿sentences
+CastStateListner not getting called in fragment.
+CaststateListener not getting called in Fragment.
+i am calling it in onresume .
+"when fragment starts nothing happen during onresume .But when app goes in background so onstop is being called then coming back to foreground onresume is being called , at that time listner works ."
+ShakeDetector - Lifecycle relation.
+"ShakeDetector should stop listening if being-reported activity goes background, ie."
+"It should also  re start when it comes to foreground, ie."
+onResume  .
+Issue when using MicrophoneInput with onResume   and onPause  .
+Issue when using MicrophoneInput with onResume   and onPause
+Possible incorect method call in GLSurfaceViewTest.java.
+I think the call to super should be the .onResume method not the .onPause method.
+I could be wrong but it doesn t seem logical.
+[Chapter 7] error in GLSurfaceViewTest.java source code.
+What steps will reproduce the problem.
+Look in file GLSurfaceViewTest.java of chapter 7 in the Source section of this website.
+What is the expected output.
+What do you see instead.
+"As noted in the errata for the book for pg280, in method onResume   it should say super.onResume   instead of super.onPause  ."
+But the source code on the site still contains the error.
+What version of the product are you using.
+On what operating system.
+Whatever the version is on this website at the time of this writing.
+Please provide any additional information below.
+Issue when using MicrophoneInput with onResume   and onPause  .
+What steps will reproduce the problem.
+"When AudioRecord loops at run  , we have to release recorder too at MicrophoneInput class recorder.release   ."
+What is the expected output.
+What do you see instead.
+"I used MicrophoneInput class to my app, which must dynamically turn on or off microphone due to power consumption."
+"I configured at onPause   to stop recording, and at onResume   to restart recording."
+"Yet result was not good, decibel meter went to minus for example   -39dB ."
+What version of the product are you using.
+On what operating system.
+I have used the source what is here and I m using Android 4.1.2 JZO54K.
+Please provide any additional information below.
+I couldn t know why recorder must be released and restarted.
+But this is just one solution for bug.
+[Chapter 7] error in GLSurfaceViewTest.java source code.
+What steps will reproduce the problem.
+Look in file GLSurfaceViewTest.java of chapter 7 in the Source section of this website.
+What is the expected output.
+What do you see instead.
+"As noted in the errata for the book for pg280, in method onResume   it should say super.onResume   instead of super.onPause  ."
+But the source code on the site still contains the error.
+What version of the product are you using.
+On what operating system.
+Whatever the version is on this website at the time of this writing.
+Please provide any additional information below.

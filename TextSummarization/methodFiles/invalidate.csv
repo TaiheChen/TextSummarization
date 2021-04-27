@@ -1,0 +1,24 @@
+﻿sentences
+referenceDir does not work.
+referenceDir parameter is always ignored - no matter what I write inside it - screenshots are saved to $projectDir/screenshots folder.
+Removing multipleDevices does not affect it too.
+"I already tried to invalidate caches, removing .idea & .gradle folders, reimporting project - still does not work."
+Refactor HighlightingImageView.
+"More specifically, AnimationUpdateListener uses the following  invalidate    to refresh the view, as we now have newly calculated animation coords."
+highlightCoordinates  to put the newly calculated coords.
+OverlayParams uses the following invalidate    to refresh the view.a bunch of constants which can be easily taken care of.
+"pageBounds  which is used exclusively by this class, so can be easily dealt with"
+Can we change the childitem s background programmatically.. Hi.
+Thanks for your awesome lib.
+But I have an issue with it.
+"In the childItem s onclicklistener event, I can t change its background, even I can show a Toast message or set text to another view."
+I also tried childItem.invalidate   and childItem.bringToFront   but still didn t work.
+Hope you can help soon.
+metadata shows old station right after switching.
+"since it is running asynchronously, when a new station plays, it doesn t stop getting the metadata for the old station, and shows that data when the new one starts, waiting til the next refresh to get the new data."
+"find a way to stop it, or invalidate it, or not update it with the old data if the station changed, or something."
+openActionBarOverflowOrOptionsMenu does not work with non-english locale & proguard used.
+Please provide any additional information below.
+the test passes when running without obfuscation.
+i think the issue is in the  OVERFLOW_BUTTON_MATCHER  in Espress.class it checks for a view with descrtiption  More options  or a view with classname ending in OverflowMenuButton .
+the first one is invalidated by the non engish locale and i asume the second one by the obfuscation.

@@ -1,0 +1,69 @@
+﻿sentences
+Android Does *Not* Have a Crop Intent.
+"Look at this post No, Android Does Not Have a Crop Intent Many developers are calling startActivity   on an Intent with an action of com.android.camera.action.CROP."
+They are doing this to crop an image.
+This is a really bad idea.
+"Any time you find yourself typing or pasting something starting with com.android, warning bells should be sounding."
+"Better yet, the “Lost in Space” Robot should amble toward you, waving his arms, shouting “Danger, Will Robinson."
+"Danger.”  note  while your name may not be Will Robinson, if a robot is flailing about in your vicinity, just play along, m’kay."
+"In this specific case, this Intent action is supported by the AOSP Camera app."
+That app does not exist on all devices.
+"Devices lacking this app will not respond to this undocumented Intent action, and your app will crash."
+There are several open source libraries for cropping images in Android.
+"I have not tried any of them, and therefore cannot vouch for how well any work."
+"However, they are safer bets than relying upon an undocumented Intent action from an app that may not exist on any given user’s device."
+It seems that using the so called System Crop Action  com.android.camera.action.CROPis not a wise choice.
+"How to Use Detector on Full Camera Image and How to Use Front-Facing Camera.. Hi, What code do I need to change in order to use the full-size image for the face detector and also for drawing the bounding box and landmarks."
+"I tried changing the face detector to use the full size bitmap as so.results = mFaceDet.detect mRGBframeBitmap , However, the face detector is completely unable to detect a face."
+Please advise.
+"Also, do you know how I would change the code to use the front-facing camera."
+I m very new to Android but found this suggested code snippet.
+Wrap Share Intent with Chooser.
+In the java land you re just passing a basic Share Intent which throws up an option to set the default share action.
+This could cause a user to lock them into sharing with one app.
+you could either make changes here https //github.com/ofZach/inkSpace/blob/master/srcJava/cc/openframeworks/inkSpace/OFActivity.java#L100 or here https //github.com/ofZach/inkSpace/blob/master/srcJava/cc/openframeworks/inkSpace/OFActivity.java#L94 Or I might make the changes and do a PR.
+here is some example code for popping up a Chooser
+ExpandedControllerActivity gives SQLiteDatabase exception.
+To give a gist of a scenario.
+I am using exoplayer to play the video and having a cast functionality.
+"When I click on cast button, I have.as in the sample application."
+This is how I build my mediaInfo.I am not sure why but as soon as I click on the cast button I get this exception.
+Version 0.2.0 breaks login.
+Updating to version 0.2.0 has broken the login flow for our existing project.
+"In debugging, it looks like it gets to the step where it should launch AuthorizationManagementActivity but nothing happens."
+I don t see any errors or any additional info in the logs to help troubleshoot.
+"This is the line in AuthorizationService where it trails off  this.mContext.startActivity AuthorizationManagementActivity.createStartIntent this.mContext, request, authIntent, completedIntent, canceledIntent  , The last log message is  Warming up browser instance for auth request  but nothing actually appears to happen in the app."
+Context.startActivity   注意事项.
+Context.startActivity   注意事项
+Is possible start play video on time moment..
+"I have used this project for play youtube videos in my app, but I need play these videos starting in time 41 second, like in youtub url  http //www.youtube.com/watch.v=pNa6dx6VBlo&t=41s In my app I have used  Intent lVideoIntent = new Intent null, Uri.parse  ytv //jNztrIHEsuU&t=41s  , this, OpenYouTubePlayerActivity.class , startActivity lVideoIntent , but all videos start on second 1."
+Is possible start in other time moment.
+Test hangs and timeout on setUp  GoogleInstumentation  ActivityFinisher  leaks activities between tests.
+What steps will reproduce the problem.
+Create Test1 which goes from Activity A to Activity B to Activity C. 2 Create Test 2 which does the same.
+3  Check the Activity Stack when Test 1 ends What is the expected output.
+What do you see instead.
+Test2 will start and Activity B is still on the Stack.
+What version of the product are you using.
+On what operating system.
+Please provide any additional information below.
+This can result in test hanging between each other and failing with a timeout on startActivitySync.
+A fix is proposed and pushed here https //code.google.com/r/luigimassagallerano-googleinstr/source/detail.r=0 bd56035ad407e061064e6ba2b5dec3df33a1887
+Test hangs and timeout on setUp  GoogleInstumentation  ActivityFinisher  leaks activities between tests.
+What steps will reproduce the problem.
+Create Test1 which goes from Activity A to Activity B to Activity C. 2 Create Test 2 which does the same.
+3  Check the Activity Stack when Test 1 ends What is the expected output.
+What do you see instead.
+Test2 will start and Activity B is still on the Stack.
+What version of the product are you using.
+On what operating system.
+Please provide any additional information below.
+This can result in test hanging between each other and failing with a timeout on startActivitySync.
+A fix is proposed and pushed here https //code.google.com/r/luigimassagallerano-googleinstr/source/detail.r=0 bd56035ad407e061064e6ba2b5dec3df33a1888
+when sign up or sign in .
+error occur sometimes.
+"Currently, DMActivity offers no functionality for resolving dependencies at run-time."
+"It d be nice to have a startActivity   override - or a slightly differently named function - that does the following  * try startActivity * catch ActivityNotFoundException * use DM.displayChoicesForIntents  , passing the Intent that failed."
+[client] Add startActivity   override.
+"Currently, DMActivity offers no functionality for resolving dependencies at run-time."
+"It d be nice to have a startActivity   override - or a slightly differently named function - that does the following  * try startActivity * catch ActivityNotFoundException * use DM.displayChoicesForIntents  , passing the Intent that failed"

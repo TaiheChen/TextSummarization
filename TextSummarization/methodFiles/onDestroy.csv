@@ -1,0 +1,19 @@
+﻿sentences
+Android O  8.1.0    invalid channel for service notification.
+I ve got this new error for users using android 8.1.0    android.app.RemoteServiceException  Bad notification for startForeground  java.lang.RuntimeException  invalid channel for service notification  Notification channel=null...
+I can reproduce the error on emulator using API level 27.
+"I ve found this topic   https //stackoverflow.com/questions/47531742/startforeground-fail-after-upgrade-to-android-8-1 The error is not systematic and depend on the robospice service   if the service is completed when onDestroy is called =  no crash, if the service is still running =  crash."
+"I m not 100% that the crash is due to Robospice, but I do not use notification manager in my code, and it always crash when leaving the app with service un background."
+kotlin继承LazyFragment报错.
+"使用kotlin集成时报错 java.lang.LinkageError  Method void com.distribution.liul.ui.fragment.Fgtaa.onDestroyView   overrides final method in class Lcom/shizhefei/fragment/LazyFragment,"
+Save current value of @Arg annotated field.
+save the current value of @Arg annotated field in Fragment.onDestroy   would be a good idea.
+"Give the possibility to change that in @Arg annotation, maybe something like this."
+uart_close will not be called while SerialPortActivity onDestroy.
+What steps will reproduce the problem.
+"I add trace message in serial driver in uart_close function 2. while SerialPortActivity onDestroy, uart_close will not be called 3."
+"If remove following code in private class ReadThread extends Thread,"
+I/O error during system call.
+Connection reset by peer.
+"And At the onDestroy   I released it with wakeLock.release  , But that too didn t help."
+And is there is anything else I need to check at server end.

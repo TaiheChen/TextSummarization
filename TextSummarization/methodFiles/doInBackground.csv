@@ -1,0 +1,17 @@
+﻿sentences
+memory leak.
+I have encountered a memory problem.
+"Each time the connection is attempted, if it fails, there is a memory increment of 512KB that is never released."
+I tried various methods cancel  true  in the AsyncTask when an exception is triggered in socketexceptionset tcpClient to nullcall System.gc   call TCPCommunicator.removeAllListerners   call TCPCommunicator.closeStreams   on different occasions in doInBackgroundSocketTimeoutExceptionUnknownHostExceptionIOExceptionbut every attempt has failed and memory continues to increase.
+org.jin outs.ws.exception.Method Not Matched Exception.
+What steps will reproduce the problem.1.
+I am calling the LogCollector from LogCollectorUsage application on myemulator.2.
+"I have put the debug point on  return log,  statement in doInBackground .. to view th logs3."
+The logs are getting truncated.
+he logs are getting truncated.
+What steps will reproduce the problem.1.
+I am calling the LogCollector from LogCollectorUsage application on myemulator.2.
+"I have put the debug point on  return log,  statement in doInBackground .. to view th logs3."
+The logs are getting truncated.
+MapFragment.java line 111. in org.shingo.shingoeventsapp.ui.events.MapFragment$DownloadImageTask.doInBackgroundNumber of crashes  1Impacted devices  1There s a lot more information about this crash on crashlytics.com https //fabric.io/shingo-it/android/apps/org.shingo.shingoeventsapp/issues/5792922affcdc042503c9874
+MapFragment.java line 108. in org.shingo.shingoeventsapp.ui.events.MapFragment$DownloadImageTask.doInBackgroundNumber of crashes  1Impacted devices  1There s a lot more information about this crash on crashlytics.com https //fabric.io/shingo-it/android/apps/org.shingo.shingoeventsapp/issues/57926802ffcdc042503a3341

@@ -1,0 +1,18 @@
+﻿sentences
+tab 文字长度发生改变.如何改变scrollBar的长度.
+"调用indicatorAdapter.getIndicatorAdapter  .notifyDataSetChanged  ,，只能刷新文字，scrollBar长度咩有变"
+The application s PagerAdapter changed the adapter s contents without calling PagerAdapter#notifyDataSetChan.
+Caused by  java.lang.IllegalStateException  The content of the adapter has changed but ListView did not receive a notification.
+"Make sure the content of your adapter is not modified from a background thread, but only from the UI thread."
+Make sure your adapter calls notifyDataSetChanged   when its content changes.
+Changes in recycler view the button sticky in bottom blink and disappear.
+"i have this xml, with my recycler view and the button in the bottom of this."
+"I ve configured app stickyFooter = app stickyFooter= @+id/layout_button_search_opponent  and when have changes in my recycler view,  notifyItemChanged, notifyItemRemoved, notifyDataSetChanged, etc...  the button sticky in bottom blink and disappears 🤔, its very strange."
+NumberPicker dialog  dialog.onValueAvailable val.
+pos  not selecting item.
+"does move layout manager of dialog to proper position, but does not get adapter select current item."
+"You forget to call notifyDataSetChanged on dialog s adapter, please implement it, and release new lib version, Your lib is cool."
+data change cause crash.
+"when I user  notifyItemRemoved position  ,app crash, then I try  notifyDataSetChanged   ,app crash too."
+rename notifyDataChangedEvent to notifyDataSetChanged.
+Rename AbstractWheelAdapter.notifyDataChangedEvent to BaseAdapter.notifyDataSetChanged to conform common android adapter method coventions.

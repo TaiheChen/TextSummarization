@@ -1,0 +1,23 @@
+﻿sentences
+"Will it be possible to make the app of Native Clipboard Manager work on Android Q well.. For now, I ve found out that it s possible to get the clipboard data in the background, but only if the app is in the foreground with an on-top view ."
+Example here .
+"Un-comment the part in the onStartCommand function, and you will see it will write to the log each time something gets copied, even if you leave the app."
+"But, what I miss on your app is to paste the clipboard data, which doesn t work and I don t know how it is working in code."
+"I know that clipboard apps got to be much worse on Android Q  here , but maybe there is still a way around it."
+java.lang.IllegalArgumentException  Malformed intent android.app.ActivityThread.performLaunchActivity.
+And sometime my app is crash with status is Caused by java.lang.IllegalArgumentException Malformed intent net.openid.appauth.AuthorizationManagementResponse.fromIntent  AuthorizationManagementResponse.java 61  com.okta.appauth.android.OktaManagementActivity.onStart  OktaManagementActivity.java 126 | I found function in class AuthorizationManagementResponse write
+SessionTimerManager starts after file transfer is completed if file can be sent in one chunk.. What steps will reproduce the problem.
+Enable a value for the Session refresh expire period in provisioning to enable session refresh re-invite 2.
+Send a small file 3.
+SessionTimerManager is started and later sends re-invite on already terminated session.
+What is the expected output.
+What do you see instead.
+SessionTimerManager should not start if file transfer is completed.
+What version of the product are you using.
+On what operating system.
+rcs stack 2.5.13 on Android 4.1.3 Please provide any additional information below.
+"In ImsServiceSession.handle200OK  , it calls startMediaSession   to open the msrp session."
+"If the file is small, it will be done in 1 chunk."
+"terminateSession   is called before calling the listeners  handleSessionStarted  , as a result SessionTimerManager is started after the session has already been terminated."
+"When the timer expires, it tries to send an re-invite to already terminated session"
+"public void onStart   throws SQLException, InstantiationException, IllegalAccessException, ClassNotFoundException { Log.d LogTag,  Service on start  , executor = Executors.newFixedThreadPool 1 , executor.execute new ConnectionThread   ,"
